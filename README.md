@@ -1,7 +1,7 @@
 # Portfólio Pessoal
 
-**Nome:** Seu Nome Completo
-**Turma:** Sua turma
+**Nome:** Gustavo da Silva Dutra
+
 
 🔗 **Site publicado:** https://seu-usuario.github.io/portfolio/
 
