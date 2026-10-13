@@ -3,7 +3,7 @@
 **Nome:** Gustavo da Silva Dutra
 
 
-🔗 **Site publicado:** https://seu-usuario.github.io/Portifolio_Gustavo_Dutra/
+🔗 **Site publicado:** https://Gustavo051921.github.io/Portifolio_Gustavo_Dutra/
 
 ## Prints do site
 
