@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Diagrama entidade-relacionamento">
+  <rect width="640" height="400" fill="#eff6ff"/>
+  <g fill="#fff" stroke="#2563eb" stroke-width="3">
+    <rect x="60" y="80" width="150" height="90" rx="8"/>
+    <rect x="245" y="230" width="150" height="90" rx="8"/>
+    <rect x="430" y="80" width="150" height="90" rx="8"/>
+  </g>
+  <g stroke="#06b6d4" stroke-width="3" fill="none">
+    <path d="M210 125H430"/>
+    <path d="M135 170L245 275"/>
+    <path d="M505 170L395 275"/>
+  </g>
+  <g font-family="monospace" font-size="18" fill="#1e40af" text-anchor="middle">
+    <text x="135" y="132">Evento</text>
+    <text x="320" y="282">Ingresso</text>
+    <text x="505" y="132">Cliente</text>
+  </g>
+</svg>

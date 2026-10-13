@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Fluxo de entrevista e requisitos">
+  <rect width="640" height="400" fill="#f0f9ff"/>
+  <g fill="#fff" stroke="#2563eb" stroke-width="3">
+    <rect x="40" y="150" width="140" height="100" rx="10"/>
+    <rect x="250" y="150" width="140" height="100" rx="10"/>
+    <rect x="460" y="150" width="140" height="100" rx="10"/>
+  </g>
+  <g stroke="#06b6d4" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M180 200H250M390 200H460M235 188l15 12-15 12M445 188l15 12-15 12"/>
+  </g>
+  <g font-family="monospace" font-size="18" fill="#1e40af" text-anchor="middle">
+    <text x="110" y="206">Entrevista</text>
+    <text x="320" y="206">Requisitos</text>
+    <text x="530" y="206">Casos de uso</text>
+  </g>
+</svg>

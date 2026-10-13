@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Tabelas de banco de dados">
+  <rect width="640" height="400" fill="#eef2ff"/>
+  <g fill="#fff" stroke="#2563eb" stroke-width="3">
+    <rect x="50" y="60" width="240" height="130" rx="8"/>
+    <rect x="350" y="60" width="240" height="130" rx="8"/>
+    <rect x="200" y="235" width="240" height="120" rx="8"/>
+  </g>
+  <g fill="#2563eb">
+    <rect x="50" y="60" width="240" height="32" rx="8"/>
+    <rect x="350" y="60" width="240" height="32" rx="8"/>
+    <rect x="200" y="235" width="240" height="32" rx="8"/>
+  </g>
+  <g stroke="#cbd5e1" stroke-width="3">
+    <path d="M70 120H270M70 148H270M370 120H570M370 148H570M220 295H420M220 322H420"/>
+  </g>
+  <g stroke="#06b6d4" stroke-width="3" fill="none">
+    <path d="M290 125H350"/>
+    <path d="M170 190V235"/>
+    <path d="M470 190V212H320V235"/>
+  </g>
+</svg>

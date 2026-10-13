@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Diagrama de casos de uso">
+  <rect width="640" height="400" fill="#ecfeff"/>
+  <rect x="210" y="40" width="380" height="320" rx="12" fill="#fff" stroke="#06b6d4" stroke-width="3"/>
+  <g fill="#e0f2fe" stroke="#2563eb" stroke-width="3">
+    <ellipse cx="400" cy="110" rx="110" ry="32"/>
+    <ellipse cx="400" cy="200" rx="110" ry="32"/>
+    <ellipse cx="400" cy="290" rx="110" ry="32"/>
+  </g>
+  <g stroke="#1e40af" stroke-width="4" fill="none" stroke-linecap="round">
+    <circle cx="90" cy="150" r="22"/>
+    <path d="M90 172V240M50 195H130M90 240L60 295M90 240L120 295"/>
+  </g>
+  <g stroke="#06b6d4" stroke-width="3">
+    <path d="M130 195L292 115"/>
+    <path d="M130 200L292 200"/>
+    <path d="M130 205L292 285"/>
+  </g>
+</svg>

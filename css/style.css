@@ -1,0 +1,457 @@
+/* ==========================================================
+   VARIÁVEIS
+   ========================================================== */
+:root {
+  --cor-primaria: #2563eb;
+  --cor-primaria-escura: #1e40af;
+  --cor-destaque: #06b6d4;
+  --cor-fundo: #ffffff;
+  --cor-fundo-alt: #f1f5f9;
+  --cor-texto: #1e293b;
+  --cor-texto-suave: #64748b;
+  --cor-borda: #e2e8f0;
+  --fonte-base: 'Inter', system-ui, sans-serif;
+  --fonte-mono: 'JetBrains Mono', monospace;
+  --raio: 12px;
+  --sombra: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+/* ==========================================================
+   RESET E BASE
+   ========================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  font-family: var(--fonte-base);
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+.container {
+  width: min(1100px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+/* ==========================================================
+   SEÇÕES (estrutura comum)
+   ========================================================== */
+.section {
+  padding: 4rem 0;
+}
+
+.section--alt {
+  background: var(--cor-fundo-alt);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section__sub {
+  color: var(--cor-texto-suave);
+  margin-bottom: 2rem;
+}
+
+/* ==========================================================
+   BOTÕES
+   ========================================================== */
+.btn {
+  display: inline-block;
+  background: var(--cor-primaria);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--cor-primaria-escura);
+}
+
+.btn--small {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================
+   CABEÇALHO E MENU (FLEXBOX)
+   ========================================================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--cor-borda);
+  backdrop-filter: blur(6px);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-family: var(--fonte-mono);
+  font-weight: 500;
+  color: var(--cor-primaria);
+  font-size: 1.1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+/* ==========================================================
+   SOBRE MIM (GRID com grid-template-areas)
+   ========================================================== */
+.sobre {
+  padding: 5rem 0;
+}
+
+.sobre__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "foto titulo"
+    "foto texto";
+  gap: 1rem 3rem;
+  align-items: center;
+}
+
+.sobre__foto {
+  grid-area: foto;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--cor-primaria);
+  justify-self: center;
+}
+
+.sobre__titulo {
+  grid-area: titulo;
+  align-self: end;
+}
+
+.sobre__texto {
+  grid-area: texto;
+  align-self: start;
+}
+
+.eyebrow {
+  font-family: var(--fonte-mono);
+  color: var(--cor-destaque);
+}
+
+.sobre h1 {
+  font-size: 2.8rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.sobre__area {
+  color: var(--cor-texto-suave);
+  font-weight: 500;
+}
+
+.sobre__texto p {
+  margin: 1rem 0 1.5rem;
+  max-width: 60ch;
+}
+
+/* ==========================================================
+   HABILIDADES (GRID)
+   ========================================================== */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #fff;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  box-shadow: var(--sombra);
+}
+
+.skill-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--cor-primaria);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags li {
+  background: var(--cor-fundo-alt);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ==========================================================
+   PROJETOS (GRID + cards com FLEXBOX)
+   ========================================================== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.75rem;
+  padding: 1.25rem;
+}
+
+.card__body p {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+}
+
+.card__body .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* ==========================================================
+   FORMAÇÃO E EXPERIÊNCIA (GRID)
+   ========================================================== */
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.timeline__item {
+  background: #fff;
+  border-left: 4px solid var(--cor-primaria);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  box-shadow: var(--sombra);
+}
+
+.timeline__item h3 {
+  margin-bottom: 0.75rem;
+}
+
+.timeline__item li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================
+   CONTATO (FLEXBOX)
+   ========================================================== */
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact a {
+  display: block;
+  padding: 0.85rem 2rem;
+  border: 2px solid var(--cor-primaria);
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact a:hover,
+.contact a:focus-visible {
+  background: var(--cor-primaria);
+  color: #fff;
+}
+
+/* ==========================================================
+   RODAPÉ (FLEXBOX)
+   ========================================================== */
+.footer {
+  background: var(--cor-texto);
+  color: #cbd5e1;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer__links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ==========================================================
+   RESPONSIVIDADE – TABLET (até 900px)
+   ========================================================== */
+@media (max-width: 900px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre__grid {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1rem 2rem;
+  }
+
+  .sobre h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* ==========================================================
+   RESPONSIVIDADE – CELULAR (até 600px)
+   ========================================================== */
+@media (max-width: 600px) {
+  .header__inner {
+    flex-direction: column;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+  }
+
+  .sobre {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .sobre__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "foto"
+      "titulo"
+      "texto";
+  }
+
+  .sobre__titulo,
+  .sobre__texto {
+    align-self: auto;
+  }
+
+  .sobre__texto p {
+    margin-inline: auto;
+  }
+
+  .skills,
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

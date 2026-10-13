@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Avatar em tons de azul">
+  <rect width="400" height="400" fill="#dbeafe"/>
+  <circle cx="200" cy="155" r="75" fill="#2563eb"/>
+  <path d="M60 400c0-90 60-150 140-150s140 60 140 150z" fill="#1e40af"/>
+</svg>
