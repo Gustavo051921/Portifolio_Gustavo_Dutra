@@ -5,11 +5,6 @@
 
 🔗 **Site publicado:** https://Gustavo051921.github.io/Portifolio_Gustavo_Dutra/
 
-## Prints do site
-
-| Desktop | Mobile |
-|---------|--------|
-| ![Versão desktop](img/print-desktop.png) | ![Versão mobile](img/print-mobile.png) |
 
 ## Onde usei CSS Grid
 
